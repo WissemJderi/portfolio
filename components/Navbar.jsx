@@ -4,7 +4,7 @@ const Navbar = () => {
   const linkStyle = "cursor-pointer";
   const navbarItemsContent = navbarItems.map((item) => (
     <p
-      className="text-sm sm:text-xl cursor-pointer hover:text-[#987CD3] font-[poppins]"
+      className="text-sm sm:text-2xl cursor-pointer hover:text-[#987CD3] font-[poppins]"
       key={item}
     >
       {item}
