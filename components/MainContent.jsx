@@ -1,8 +1,6 @@
 "use client";
 import ProjectCard from "./ProjectCard";
-import TechStackCard from "./TechStackCard";
 import { motion } from "framer-motion";
-import { Figma } from "lucide-react";
 import {
   FaReact,
   FaNodeJs,
@@ -25,6 +23,7 @@ import {
 import OpenForHire from "./OpenForHire";
 
 const MainContent = () => {
+  const titleStyle = "text-3xl mb-5 font-bold font-stretch-75% tracking-wide";
   const techCategories = [
     {
       category: "Frontend",
@@ -104,9 +103,7 @@ const MainContent = () => {
     // no-scrollbar
     <div className="col-span-3 p-10 sm:overflow-y-auto overflow-hidden">
       <section className={`${sectionStyle}`}>
-        <h1 className="text-3xl mb-5 font-bold font-stretch-75% tracking-wide">
-          My Projects:
-        </h1>
+        <h1 className={`${titleStyle}`}>My Projects:</h1>
         <section className="grid sm:grid-cols-2 gap-4">
           <ProjectCard />
           <ProjectCard />
@@ -120,9 +117,7 @@ const MainContent = () => {
         viewport={{ once: true }}
         className={`${sectionStyle}`}
       >
-        <h2 className="text-3xl mb-5 font-bold font-stretch-75% tracking-wide">
-          About Me:
-        </h2>
+        <h2 className={`${titleStyle}`}>About Me:</h2>
         <p className="text-gray-200 leading-relaxed mb-6">
           I'm <span className="font-bold">Wissem</span>, a self-taught developer
           who sees programming as more than just writing code;{" "}
@@ -161,9 +156,7 @@ const MainContent = () => {
         // className="bg-black max-w-5xl mx-auto px-6 py-10 rounded-2xl text-white"
         className={sectionStyle}
       >
-        <h2 className="text-3xl mb-5 font-bold font-stretch-75% tracking-wide">
-          Technologies I Use:
-        </h2>
+        <h2 className={`${titleStyle}`}>Technologies I Use:</h2>
         <p className="mb-10">
           The tools, languages, and frameworks I specialize in to deliver
           efficient solutions.
@@ -201,7 +194,7 @@ const MainContent = () => {
         {/* <h1>Certificates</h1> */}
         {/* <h1>Dark and light theme</h1> */}
       </section>
-      <OpenForHire style={sectionStyle} />
+      <OpenForHire style={sectionStyle} titleStyle={titleStyle} />
       <button>Download CV</button>
     </div>
   );

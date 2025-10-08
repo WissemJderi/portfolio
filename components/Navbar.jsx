@@ -1,6 +1,6 @@
 const Navbar = () => {
   // The items that will be shown in the navbar
-  const navbarItems = ["About Me", "Porjects", "Tech Stack", "Blogs", "Values"];
+  const navbarItems = ["My Projects", "About Me", "Tech I Use", "Hire Me"];
   const linkStyle = "cursor-pointer";
   const navbarItemsContent = navbarItems.map((item) => (
     <p

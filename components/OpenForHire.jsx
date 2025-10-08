@@ -1,4 +1,4 @@
-const OpenForHire = ({ style }) => {
+const OpenForHire = ({ style, titleStyle }) => {
   const openForHire = [
     "Frontend Development – React, Next.js, Tailwind",
     "Backend Development – Node.js, Express, Python",
@@ -15,7 +15,7 @@ const OpenForHire = ({ style }) => {
       // className="max-w-4xl mx-auto px-6 py-10 bg-black rounded-2xl"
       className={style}
     >
-      <h2 className="text-3xl font-semibold mb-8 text-white">Open for Hire</h2>
+      <h1 className={`${titleStyle}`}>Open for Hire:</h1>
       <ul className="list-disc list-inside space-y-3 text-gray-600">
         {openForHire.map((job, index) => (
           <li
