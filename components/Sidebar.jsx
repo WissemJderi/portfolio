@@ -1,4 +1,6 @@
 "use client";
+
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import CurvedLoop from "./CurvedLoop";
@@ -7,15 +9,16 @@ import SplitText from "./SplitText";
 const handleAnimationComplete = () => {
   console.log("All letters have animated!");
 };
+const currentYear = new Date().getFullYear();
 
 const Sidebar = () => {
   return (
-    <div className="col-span-1 sm:border-r-1 border-gray-700 flex flex-col justify-between flex-wrap gap-2 p-10">
+    <div className="col-span-1 sm:border-r-1 border-white flex flex-col justify-between flex-wrap gap-2 p-10">
       <div>
         <h1 className="text-center font-bold text-4xl tracking-widest font-[poppins]">
           <SplitText
             text="Wissem Jderi"
-            className="text-4xl h-15 font-semibold text-center"
+            className="text-4xl text-white h-15 font-semibold text-center"
             delay={100}
             duration={0.6}
             ease="power3.out"
@@ -43,36 +46,48 @@ const Sidebar = () => {
           />
         </div>
       </div>
-      <div className="text-center hidden sm:block">
+      <div className="text-center text-white hidden sm:block">
         <p className="text-2xl font-[poppins]">Get In Touch</p>
         <p className="text-sm">
           Let's turn your vision into reality. Reach out and let's start
           building something extraordinary together.
         </p>
         <div className="flex gap-5 justify-center mt-4 ">
-          <button
-            className="flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800"
+          <motion.button
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800 cursor-pointer"
             type=""
           >
             <FaGithub />
-          </button>
-          <button
-            className="flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800"
+          </motion.button>
+          <motion.button
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800 cursor-pointer"
             type=""
           >
             <FaLinkedin />{" "}
-          </button>
-          <button
-            className="flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800"
+          </motion.button>
+          <motion.button
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800 cursor-pointer"
             type=""
           >
             <MdEmail />
-          </button>
+          </motion.button>
         </div>
         <hr className="sm:w-1/2 m-auto my-3 text-gray-500" />
         <p className="text-gray-500">
           {" "}
-          © 2025 Wissem Jderi. All rights reserved.
+          © {currentYear} Wissem Jderi. All rights reserved.
         </p>
       </div>
     </div>
