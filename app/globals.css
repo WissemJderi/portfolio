@@ -136,3 +136,11 @@
     @apply bg-background text-foreground;
   }
 }
+.background-color {
+  background: radial-gradient(
+    ellipse at center,
+    #3a1c71 0%,
+    #1f0f3d 60%,
+    #000000 100%
+  );
+}
