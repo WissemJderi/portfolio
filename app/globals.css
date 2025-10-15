@@ -144,3 +144,7 @@
     #000000 100%
   );
 }
+.scrollbar-always {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
