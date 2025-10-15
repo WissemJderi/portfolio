@@ -1,4 +1,5 @@
 import { RiLiveFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaPython, FaGithub } from "react-icons/fa";
 import Link from "next/link";
@@ -10,7 +11,10 @@ const ProjectCard = ({
   repo,
 }) => {
   return (
-    <div className="p-4 bg-gray-900  rounded-2xl ">
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      className="p-4 bg-gray-900  rounded-2xl "
+    >
       {" "}
       <Image
         src={`/${imageSrc}`}
@@ -35,7 +39,7 @@ const ProjectCard = ({
           </h1>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -15,7 +15,7 @@ const Main = () => {
     >
       {" "}
       <Navbar />
-      <div className="sm:grid grid-flow-col grid-cols-3 xl:p-10 p-2 sm:h-10/12 border-2 border-white">
+      <div className="sm:grid grid-flow-col grid-cols-3 xl:p-10 p-2 sm:h-10/12">
         <Sidebar />
         <MainContent />
       </div>

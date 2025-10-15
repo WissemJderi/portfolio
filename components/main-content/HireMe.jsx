@@ -12,7 +12,10 @@ const HireMe = ({ sectionStyle, titleStyle }) => {
 
   return (
     <section id="Hire Me" className={sectionStyle}>
-      <h1 className={`${titleStyle}`}>Open for Hire:</h1>
+      <h2 className={`${titleStyle}`}>Open for Hire:</h2>
+      <p className="mb-7">
+        If my skills can help your project, I’d be glad to contribute.
+      </p>
       <ul className="list-disc list-inside space-y-3 text-gray-600">
         {openForHire.map((job, index) => (
           <li

@@ -2,7 +2,7 @@ import { certificates } from "./data/myCertificates";
 
 const Certificates = ({ sectionStyle, titleStyle }) => {
   return (
-    <div className={`${sectionStyle}`}>
+    <div id="Certificates" className={`${sectionStyle}`}>
       <h2 className={`${titleStyle}`}>Certificates & Achievements:</h2>
       <p className="mb-7">
         Some of the certificates I’ve earned while learning and growing as a
