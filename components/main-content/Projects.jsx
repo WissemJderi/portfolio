@@ -12,9 +12,11 @@ const Projects = ({ sectionStyle, titleStyle }) => {
     />
   ));
   return (
-    <section className={`${sectionStyle}`}>
+    <section id="My Projects" className={`${sectionStyle}`}>
       <h1 className={`${titleStyle}`}>My Projects:</h1>
-      <section className="grid sm:grid-cols-2 gap-4">{projectCards}</section>
+      <section className="grid xl:grid-cols-2 grid-cols-1 gap-4">
+        {projectCards}
+      </section>
     </section>
   );
 };

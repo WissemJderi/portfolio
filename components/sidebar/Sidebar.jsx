@@ -1,26 +1,16 @@
-import CurvedLoop from "./CurvedLoop";
+// import CurvedLoop from "./CurvedLoop";
 import AnimatedName from "./AnimatedName";
 import Footer from "./Footer";
 
 const Sidebar = () => {
   return (
-    <div className="col-span-1 sm:border-r-1 border-white flex flex-col justify-between flex-wrap gap-2 p-10">
-      <div>
+    <div className="border-2 sm:border-r-2 border-white col-span-1 flex flex-col justify-between items-center gap-2 p-4 sm:p-6">
+      <div className="text-center">
         <AnimatedName />
-        <p className="text-center text-md opacity-85 text-indigo-200">
+        <p className="text-md opacity-85 text-indigo-200">
           Full-Stack Web Developer
         </p>
-        <hr className="sm:w-1/2 m-auto mt-2 mb-0.5" />
-        <div className="h-10 mt-20">
-          <CurvedLoop
-            marqueeText="Learn  Build  Serve "
-            speed={2}
-            curveAmount={0}
-            direction="right"
-            interactive={true}
-            className="h-10"
-          />
-        </div>
+        <hr className="w-1/2 mx-auto mt-2 mb-1" />
       </div>
       <Footer />
     </div>

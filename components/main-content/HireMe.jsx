@@ -11,7 +11,7 @@ const HireMe = ({ sectionStyle, titleStyle }) => {
   ];
 
   return (
-    <section id="hire" className={sectionStyle}>
+    <section id="Hire Me" className={sectionStyle}>
       <h1 className={`${titleStyle}`}>Open for Hire:</h1>
       <ul className="list-disc list-inside space-y-3 text-gray-600">
         {openForHire.map((job, index) => (

@@ -19,7 +19,7 @@ const ProjectCard = ({
         alt={imageAlt}
         className="mb-3"
       />
-      <h1 className="text-xl font-bold flex gap-2">{projectName}</h1>
+      <h1 className="md:text-xl text-sm font-bold flex gap-2">{projectName}</h1>
       <p className="text-sm">{projectDescription}</p>
       <FaPython color="white" size={20} />
       <div className="flex flex-row gap-2 justify-between mt-2">

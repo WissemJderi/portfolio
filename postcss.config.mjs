@@ -1,9 +1,7 @@
 const config = {
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
+      poppins: ["var(--font-poppins)", "sans-serif"],
     },
   },
   plugins: ["@tailwindcss/postcss"],
