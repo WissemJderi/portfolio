@@ -9,7 +9,7 @@ const MainContent = () => {
   const sectionStyle = "text-white mb-12  bg-black rounded-2xl py-10 px-10";
   return (
     // no-scrollbar
-    <div className="border-2 border-white col-span-2 p-4 overflow-y-auto overflow-x-hidden scrollbar-always">
+    <div className="border-2 border-white col-span-2 p-4 overflow-y-[scroll] overflow-x-hidden">
       <Projects sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <AboutMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <TechStack sectionStyle={sectionStyle} titleStyle={titleStyle} />
