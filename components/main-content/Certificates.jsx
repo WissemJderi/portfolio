@@ -2,32 +2,39 @@ import { certificates } from "./data/myCertificates";
 
 const Certificates = ({ sectionStyle, titleStyle }) => {
   return (
-    <div className={`${sectionStyle} grid grid-cols-2 gap-2`}>
-      {certificates.map((cert) => (
-        <div
-          key={cert.title}
-          className="border border-white/20 p-4 rounded-2xl hover:border-white transition"
-        >
-          <img
-            src={cert.logo}
-            alt={cert.title}
-            className={
-              cert.issuer === "freeCodeCamp"
-                ? "h-10 mb-3 freecodecamp-logo"
-                : "h-10 mb-3"
-            }
-          />
-          <h3 className="font-semibold text-white">{cert.title}</h3>
-          <p className="text-sm text-gray-400">{cert.issuer}</p>
-          <a
-            href={cert.link}
-            target="_blank"
-            className="text-blue-400 text-sm mt-2 inline-block"
+    <div className={`${sectionStyle}`}>
+      <h2 className={`${titleStyle}`}>Certificates & Achievements:</h2>
+      <p className="mb-7">
+        Some of the certificates I’ve earned while learning and growing as a
+        developer.
+      </p>
+      <div className=" grid grid-cols-1 gap-3 xl:grid-cols-2">
+        {certificates.map((cert) => (
+          <div
+            key={cert.title}
+            className="bg-gray-800 p-4 rounded-2xl hover:border-white transition"
           >
-            View Certificate →
-          </a>
-        </div>
-      ))}
+            <img
+              src={cert.logo}
+              alt={cert.title}
+              className={
+                cert.issuer === "freeCodeCamp"
+                  ? "h-10 mb-3 freecodecamp-logo"
+                  : "h-10 mb-3"
+              }
+            />
+            <h3 className="font-semibold text-white">{cert.title}</h3>
+            <p className="text-sm text-gray-400">{cert.issuer}</p>
+            <a
+              href={cert.link}
+              target="_blank"
+              className="text-blue-400 text-sm mt-2 inline-block"
+            >
+              View Certificate →
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

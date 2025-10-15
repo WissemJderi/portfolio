@@ -96,7 +96,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
   return (
     <section id="Tech I Use" className={sectionStyle}>
       <h2 className={`${titleStyle}`}>Technologies I Use:</h2>
-      <p className="mb-10">
+      <p className="mb-7">
         The tools, languages, and frameworks I specialize in to deliver
         efficient solutions.
       </p>

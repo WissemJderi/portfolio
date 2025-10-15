@@ -17,7 +17,7 @@ const HireMe = ({ sectionStyle, titleStyle }) => {
         {openForHire.map((job, index) => (
           <li
             key={index}
-            className="transition-colors bg-gray-900 text-white list-none rounded-2xl py-3 px-5"
+            className="transition-colors bg-gray-800 text-white list-none rounded-2xl py-3 px-5"
           >
             {job}
           </li>
