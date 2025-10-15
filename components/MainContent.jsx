@@ -3,6 +3,7 @@ import Projects from "./main-content/Projects";
 import AboutMe from "./main-content/AboutMe";
 import TechStack from "./main-content/TechStack";
 import HireMe from "./main-content/HireMe";
+import Certificates from "./main-content/Certificates";
 
 const MainContent = () => {
   const titleStyle = "text-3xl mb-5 font-bold font-stretch-75% tracking-wide";
@@ -16,6 +17,7 @@ const MainContent = () => {
       <HireMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
       {/* <h1>Certificates</h1> */}
       {/* <h1>Dark and light theme</h1> */}
+      <Certificates sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <button>Download CV</button>
     </div>
   );

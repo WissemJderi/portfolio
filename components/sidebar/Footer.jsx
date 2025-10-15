@@ -14,12 +14,12 @@ const Footer = () => {
     {
       id: 2,
       icon: <FaLinkedin size={20} />,
-      link: "https://github.com/WissemJderi",
+      link: "https://www.linkedin.com/in/wissem-jderi-a15765386/",
     },
     {
       id: 3,
       icon: <MdEmail size={20} />,
-      link: "https://github.com/WissemJderi",
+      link: "mailto:wissemjderi@outlook.com",
     },
   ];
   const buttonStyle =
@@ -49,7 +49,7 @@ const Footer = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="flex items-center gap-x-2 text-white rounded-2xl hover:bg-gray-800 cursor-pointer"
+              className="flex items-center gap-x-2 text-white rounded-2xl hover:text-gray-800 cursor-pointer"
             >
               {button.icon}
             </motion.button>
@@ -57,7 +57,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <hr className="w-1/2 mx-auto my-3 border-gray-700 opacity-50" />
+      <hr className="w-1/2 mx-auto my-3 border-gray-100 opacity-50" />
       <p className="text-gray-400 text-sm">
         © {currentYear} Wissem Jderi. All rights reserved.
       </p>
