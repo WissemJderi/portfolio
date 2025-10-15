@@ -7,12 +7,12 @@ const Sidebar = () => {
     <div className="sm:border-r-2 col-span-1 flex flex-col justify-between items-center gap-2 p-4 sm:p-6">
       <div className="text-center ">
         <AnimatedName />
-        <p className="text-md opacity-85 text-indigo-200">
+        <p className="text-sm opacity-85 text-indigo-200">
           Full-Stack Web Developer
         </p>
         <motion.div
           animate={{
-            scale: 2,
+            scale: 3,
             transition: { duration: 1 },
           }}
         >
