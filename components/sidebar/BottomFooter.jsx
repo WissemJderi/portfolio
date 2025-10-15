@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-const Footer = () => {
+
+const BottomFooter = () => {
   const currentYear = new Date().getFullYear();
   const buttonsList = [
     {
@@ -22,8 +23,11 @@ const Footer = () => {
       link: "mailto:wissemjderi@outlook.com",
     },
   ];
+  const buttonStyle =
+    "flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800 cursor-pointer";
+
   return (
-    <div className="text-center text-white hidden sm:block px-4 sm:px-0">
+    <div className="text-center text-white px-4 sm:px-0 sm:hidden block">
       <p className="text-2xl font-poppins">Get In Touch</p>
       <p className="text-sm text-gray-300 mt-1">
         Let's turn your vision into reality. Reach out and let's start building
@@ -63,4 +67,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default BottomFooter;
