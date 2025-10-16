@@ -1,7 +1,5 @@
 "use client";
-import { useState } from "react";
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
   // The items that will be shown in the navbar
   const navbarItems = [
     "My Projects",
@@ -21,7 +19,6 @@ const Navbar = () => {
         block: "start",
       });
     }
-    setIsOpen(false); // Close mobile menu after clicking
   };
   const navbarItemsContent = navbarItems.map((item) => (
     <p

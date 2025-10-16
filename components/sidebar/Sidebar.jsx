@@ -1,3 +1,4 @@
+"use client";
 import AnimatedName from "./AnimatedName";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
