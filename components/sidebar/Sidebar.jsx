@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 
 const Sidebar = () => {
   return (
-    <div className="sm:border-r-2 col-span-1 flex flex-col justify-between items-center gap-2 p-4 sm:p-6">
-      <div className="text-center ">
+    <div className="sm:border-r-1 col-span-1 flex flex-col justify-between items-center gap-2 p-4 sm:p-6">
+      <div className="text-center sm:mt-1 mt-20">
+        {" "}
         <AnimatedName />
         <p className="text-sm opacity-85 text-indigo-200">
           Full-Stack Web Developer
         </p>
         <motion.div
           animate={{
-            scale: 3,
+            scale: 2,
             transition: { duration: 1 },
           }}
         >

@@ -15,7 +15,6 @@ const ProjectCard = ({
       whileHover={{ scale: 1.05 }}
       className="p-4 bg-gray-900  rounded-2xl "
     >
-      {" "}
       <Image
         src={`/${imageSrc}`}
         width={500}
