@@ -26,19 +26,17 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "JavaScript",
-          icon: () => <SiJavascript size={36} className="text-yellow-400" />,
+          icon: <SiJavascript size={36} className="text-yellow-400" />,
         },
         {
           name: "TypeScript",
-          icon: () => <SiTypescript size={36} className="text-blue-600" />,
+          icon: <SiTypescript size={36} className="text-blue-600" />,
         },
-        {
-          name: "Java",
-          icon: () => <FaJava size={36} className="text-red-600" />,
-        },
+
+        { name: "Java", icon: <FaJava size={36} className="text-red-600" /> },
         {
           name: "Python",
-          icon: () => <FaPython size={36} className="text-blue-600" />,
+          icon: <FaPython size={36} className="text-blue-600" />,
         },
       ],
     },
@@ -47,15 +45,15 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "React",
-          icon: () => <FaReact size={36} className="text-blue-500" />,
+          icon: <FaReact size={36} className="text-blue-500" />,
         },
         {
           name: "Next.js",
-          icon: () => <SiNextdotjs size={36} className="text-gray-900" />,
+          icon: <SiNextdotjs size={36} className="text-gray-900" />,
         },
         {
           name: "Tailwind CSS",
-          icon: () => <SiTailwindcss size={36} className="text-teal-400" />,
+          icon: <SiTailwindcss size={36} className="text-teal-400" />,
         },
       ],
     },
@@ -64,11 +62,11 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "Node.js",
-          icon: () => <FaNodeJs size={36} className="text-green-500" />,
+          icon: <FaNodeJs size={36} className="text-green-500" />,
         },
         {
           name: "Express",
-          icon: () => <SiExpress size={36} className="text-gray-700" />,
+          icon: <SiExpress size={36} className="text-gray-700" />,
         },
       ],
     },
@@ -77,7 +75,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "PostgreSQL",
-          icon: () => <SiPostgresql size={36} className="text-blue-700" />,
+          icon: <SiPostgresql size={36} className="text-blue-700" />,
         },
       ],
     },
@@ -86,27 +84,27 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "Linux",
-          icon: () => <FaLinux size={36} className="text-black" />,
+          icon: <FaLinux size={36} className="text-black" />,
         },
-        {
-          name: "Git",
-          icon: () => <FaGitAlt size={36} className="text-red-500" />,
-        },
+
+        { name: "Git", icon: <FaGitAlt size={36} className="text-red-500" /> },
+
         {
           name: "GitHub",
-          icon: () => <FaGithub size={36} className="text-black" />,
+          icon: <FaGithub size={36} className="text-black" />,
         },
         {
           name: "Figma",
-          icon: () => <FaFigma size={36} className="text-black" />,
+          icon: <FaFigma size={36} className="text-black" />,
         },
         {
           name: "Postman",
-          icon: () => <SiPostman size={36} className="text-[#FF6C37]" />, // official Postman color
+          icon: <SiPostman size={36} className="text-black" />,
         },
       ],
     },
   ];
+
   return (
     <section id="Tech I Use" className={sectionStyle}>
       <h2 className={`${titleStyle}`}>Technologies I Use:</h2>
