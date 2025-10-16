@@ -4,7 +4,7 @@ import Squares from "@/components/Squares";
 export default function Home() {
   return (
     <div>
-      <div className="fixed top-0 left-0 w-full h-screen z-[-1]">
+      <div className="fixed top-0 left-0 w-screen h-full z-[-1]">
         <div className="absolute inset-0 bg-[#111312]/70"></div>
         <div className="w-full h-full relative">
           <Squares

@@ -6,6 +6,7 @@ import {
   FaLinux,
   FaGithub,
   FaFigma,
+  FaJava,
 } from "react-icons/fa";
 
 import {
@@ -15,10 +16,30 @@ import {
   SiExpress,
   SiNextdotjs,
   SiTypescript,
+  SiPostman,
 } from "react-icons/si";
 
 const TechStack = ({ sectionStyle, titleStyle }) => {
   const techCategories = [
+    {
+      category: "Languages",
+      techs: [
+        {
+          name: "JavaScript",
+          icon: <SiJavascript size={36} className="text-yellow-400" />,
+        },
+        {
+          name: "TypeScript",
+          icon: <SiTypescript size={36} className="text-blue-600" />,
+        },
+
+        { name: "Java", icon: <FaJava size={36} className="text-red-600" /> },
+        {
+          name: "Python",
+          icon: <FaPython size={36} className="text-blue-600" />,
+        },
+      ],
+    },
     {
       category: "Frontend",
       techs: [
@@ -31,18 +52,9 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           icon: <SiNextdotjs size={36} className="text-gray-900" />,
         },
         {
-          name: "TypeScript",
-          icon: <SiTypescript size={36} className="text-blue-600" />,
-        },
-        {
-          name: "JavaScript",
-          icon: <SiJavascript size={36} className="text-yellow-400" />,
-        },
-        {
           name: "Tailwind CSS",
           icon: <SiTailwindcss size={36} className="text-teal-400" />,
         },
-        // { name: "Next.js",}
       ],
     },
     {
@@ -55,10 +67,6 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         {
           name: "Express",
           icon: <SiExpress size={36} className="text-gray-700" />,
-        },
-        {
-          name: "Python",
-          icon: <FaPython size={36} className="text-blue-600" />,
         },
       ],
     },
@@ -88,6 +96,10 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         {
           name: "Figma",
           icon: <FaFigma size={36} className="text-black" />,
+        },
+        {
+          name: "Postman",
+          icon: <SiPostman size={36} className="text-orange-500" />,
         },
       ],
     },

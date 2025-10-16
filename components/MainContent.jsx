@@ -16,7 +16,6 @@ const MainContent = () => {
       <AboutMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <TechStack sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <HireMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
-      {/* <h1>Certificates</h1> */}
       {/* <h1>Dark and light theme</h1> */}
       <Certificates sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <BottomFooter />
