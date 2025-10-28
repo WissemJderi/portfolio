@@ -8,7 +8,9 @@ const Projects = ({ sectionStyle, titleStyle }) => {
       imageSrc={project.imageSrc}
       imageAlt={project.imageAlt}
       repo={project.repo}
+      liveDemo={project.liveDemo}
       key={project.projectName}
+      techStack={project.techStack}
     />
   ));
   return (

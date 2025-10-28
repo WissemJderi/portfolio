@@ -21,7 +21,7 @@ const Navbar = () => {
     }
   };
   const navbarItemsContent = navbarItems.map((item) => (
-    <p
+    <button
       className={linkStyle}
       key={item}
       onClick={() => {
@@ -29,7 +29,7 @@ const Navbar = () => {
       }}
     >
       {item}
-    </p>
+    </button>
   ));
   return (
     <div className="text-center flex flex-row justify-center sm:gap-7 gap-2 border-b border-white px-3 py-5 sm:bg-transparent bg-[#111312] fixed sm:relative top-0 z-50 ">

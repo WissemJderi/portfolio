@@ -1,7 +1,6 @@
 "use client";
 import AnimatedName from "./AnimatedName";
 import Footer from "./Footer";
-import { motion } from "framer-motion";
 
 const Sidebar = () => {
   return (
@@ -12,14 +11,7 @@ const Sidebar = () => {
         <p className="text-sm opacity-85 text-indigo-200">
           Full-Stack Web Developer
         </p>
-        <motion.div
-          animate={{
-            scale: 2,
-            transition: { duration: 1 },
-          }}
-        >
-          <hr className="w-1/2 mx-auto mt-2 mb-1" />
-        </motion.div>
+        <hr className="mx-auto my-3 border-gray-100 opacity-30" />
       </div>
       <Footer />
     </div>
