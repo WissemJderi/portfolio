@@ -24,7 +24,7 @@ const Footer = () => {
   ];
   return (
     <div className="text-center text-white hidden sm:block px-4 sm:px-0">
-      <p className="text-2xl font-poppins">Get In Touch</p>
+      <p className="text-2xl font-playfair">Get In Touch</p>
       <p className="text-sm text-gray-300 mt-1">
         Let's turn your vision into reality. Reach out and let's start building
         something extraordinary together.
