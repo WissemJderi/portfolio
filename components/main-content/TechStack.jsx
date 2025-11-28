@@ -115,11 +115,8 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
 
       <div className="grid gap-8 text-white">
         {techCategories.map((cat) => (
-          <div
-            key={cat.category}
-            className="bg-gray-800 rounded-2xl p-5 flex flex-row gap-8 items-center"
-          >
-            <h3 className="text-xl font-semibold text-white border-r border-gray-600 px-6">
+          <div key={cat.category} className="bg-gray-800 rounded-2xl p-5">
+            <h3 className="text-xl font-semibold mb-6 text-white">
               {`${cat.category}:`}
             </h3>
             <div className="flex flex-wrap gap-6">
@@ -130,7 +127,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
                 >
                   {tech.icon}
                   <span
-                    className="absolute bottom-full opacity-0 group-hover:opacity-100 
+                    className="absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 
                                    bg-black text-white text-xs px-2 py-1 rounded transition-opacity 
                                    whitespace-nowrap"
                   >
