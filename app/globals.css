@@ -5,6 +5,11 @@
   --font-playfair: "Playfair Display", serif;
 }
 
+@media (max-width: 640px) {
+  section {
+    scroll-margin-top: 90px;
+  }
+}
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

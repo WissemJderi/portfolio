@@ -12,9 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Wissem Jderi",
+  title: "Wissem Jderi - Full-Stack Web Developer",
   description:
     "Wissem Jderi - Full-stack developer building modern, efficient web applications. Skilled in JavaScript, React, Node.js, and passionate about clean, maintainable code.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
