@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+
 const ProjectCard = ({
   projectName,
   projectDescription,
@@ -14,32 +15,32 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.05 }}
-      className="flex flex-col justify-between p-4 bg-gray-900  rounded-2xl "
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 100 }}
+      className="flex flex-col justify-between p-4 bg-gray-900 rounded-2xl"
     >
       <Image
         src={`/${imageSrc}`}
         width={500}
-        height={500}
+        height={300}
         alt={imageAlt}
-        className="mb-4"
+        className="h-50 mb-4 rounded-lg"
       />
-      <h1 className="md:text-2xl text-sm font-medium flex gap-2">
+      <h2 className="md:text-2xl text-sm font-medium flex gap-2">
         {projectName}
-      </h1>
+      </h2>
       <p className="sm:text-lg text-sm">{projectDescription}</p>
       {techStack}
       <div className="flex flex-row gap-2 justify-between mt-2">
-        <Link href={liveDemo}>
-          <h1 className="sm:text-lg text-sm cursor-pointer font-medium flex gap-2 items-center hover:text-gray-400">
+        <Link href={liveDemo} target="_blank" rel="noopener noreferrer">
+          <span className="sm:text-lg text-sm cursor-pointer font-medium flex gap-2 items-center hover:text-gray-400">
             <RiLiveFill /> Live Demo
-          </h1>
+          </span>
         </Link>
-
-        <Link href={repo}>
-          <h1 className="sm:text-lg text-sm cursor-pointer font-medium flex gap-2 items-center hover:text-gray-400">
+        <Link href={repo} target="_blank" rel="noopener noreferrer">
+          <span className="sm:text-lg text-sm cursor-pointer font-medium flex gap-2 items-center hover:text-gray-400">
             <FaGithub /> View Code
-          </h1>
+          </span>
         </Link>
       </div>
     </motion.div>
