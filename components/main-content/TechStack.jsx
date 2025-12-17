@@ -1,19 +1,12 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaGitAlt,
-  FaLinux,
-  FaGithub,
-  FaFigma,
-  FaJava,
-} from "react-icons/fa";
+import Image from "next/image";
+import { FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
 
 import {
   SiTailwindcss,
   SiJavascript,
   SiPostgresql,
   SiExpress,
+  SiMongodb,
   SiNextdotjs,
   SiTypescript,
   SiPostman,
@@ -32,12 +25,25 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           name: "TypeScript",
           icon: <SiTypescript size={36} className="text-blue-600" />,
         },
-
-        { name: "Java", icon: <FaJava size={36} className="text-red-600" /> },
         {
           name: "Python",
-          icon: <FaPython size={36} className="text-blue-600" />,
+          icon: (
+            <Image
+              src="/logos/python.svg"
+              alt="Python"
+              width={36}
+              height={36}
+            />
+          ),
         },
+        {
+          name: "Java",
+
+          icon: (
+            <Image src="/logos/java.svg" alt="Java" width={36} height={36} />
+          ),
+        },
+        ,
       ],
     },
     {
@@ -49,7 +55,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         },
         {
           name: "Next.js",
-          icon: <SiNextdotjs size={36} className="text-gray-900" />,
+          icon: <SiNextdotjs size={36} className="text-black" />,
         },
         {
           name: "Tailwind CSS",
@@ -77,6 +83,10 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           name: "PostgreSQL",
           icon: <SiPostgresql size={36} className="text-blue-700" />,
         },
+        {
+          name: "MongoDB",
+          icon: <SiMongodb size={36} className="text-[#4DB33D]" />,
+        },
       ],
     },
     {
@@ -84,7 +94,9 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "Linux",
-          icon: <FaLinux size={36} className="text-black" />,
+          icon: (
+            <Image src="/logos/linux.svg" alt="Linux" width={36} height={36} />
+          ),
         },
 
         { name: "Git", icon: <FaGitAlt size={36} className="text-red-500" /> },
@@ -95,11 +107,13 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         },
         {
           name: "Figma",
-          icon: <FaFigma size={36} className="text-black" />,
+          icon: (
+            <Image src="/logos/figma.svg" alt="GitHub" width={36} height={36} />
+          ),
         },
         {
           name: "Postman",
-          icon: <SiPostman size={36} className="text-black" />,
+          icon: <SiPostman size={36} className="text-[#EF5B25]" />,
         },
       ],
     },

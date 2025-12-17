@@ -63,4 +63,21 @@ export const myProjects = [
     liveDemo: "https://ppslinks.vercel.app/",
     repo: "https://github.com/WissemJderi/pps-links-official-website",
   },
+  {
+    projectName: "Hichem Immo",
+    projectDescription:
+      "A modern real estate website with responsive design, dynamic listings, and an optimized image carousel.",
+    techStack: (
+      <div className="flex flex-row gap-3 my-2">
+        <SiTypescript color="white" size={25} />
+        <FaReact color="white" size={25} />
+        <RiTailwindCssFill color="white" size={25} />
+        <SiFramer color="white" size={25} />{" "}
+      </div>
+    ),
+    imageSrc: "hichemimmo_screenshot.webp",
+    imageAlt: "Screenshot of the PPS Links company website",
+    liveDemo: "http://dahechimmo.vercel.app/",
+    repo: "https://github.com/WissemJderi/hichimmo",
+  },
 ];
