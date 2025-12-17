@@ -4,12 +4,10 @@ import { FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiJavascript,
-  SiPostgresql,
   SiExpress,
   SiMongodb,
   SiNextdotjs,
   SiTypescript,
-  SiPostman,
 } from "react-icons/si";
 
 const TechStack = ({ sectionStyle, titleStyle }) => {
@@ -68,11 +66,11 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "Node.js",
-          icon: <FaNodeJs size={36} className="text-green-500" />,
+          icon: <FaNodeJs size={36} className="text-[#68A063]" />,
         },
         {
           name: "Express",
-          icon: <SiExpress size={36} className="text-gray-700" />,
+          icon: <SiExpress size={36} className="text-gray-300" />,
         },
       ],
     },
@@ -81,7 +79,14 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       techs: [
         {
           name: "PostgreSQL",
-          icon: <SiPostgresql size={36} className="text-blue-700" />,
+          icon: (
+            <Image
+              src="/logos/postgresql.svg"
+              alt="PostgreSQL"
+              width={36}
+              height={36}
+            />
+          ),
         },
         {
           name: "MongoDB",
@@ -113,7 +118,14 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         },
         {
           name: "Postman",
-          icon: <SiPostman size={36} className="text-[#EF5B25]" />,
+          icon: (
+            <Image
+              src="/logos/postman.svg"
+              alt="Postman"
+              width={36}
+              height={36}
+            />
+          ),
         },
       ],
     },
