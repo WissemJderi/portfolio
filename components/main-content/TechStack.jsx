@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+  FaDocker,
+} from "react-icons/fa";
 
 import {
   SiTailwindcss,
@@ -36,12 +42,10 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         },
         {
           name: "Java",
-
           icon: (
             <Image src="/logos/java.svg" alt="Java" width={36} height={36} />
           ),
         },
-        ,
       ],
     },
     {
@@ -56,8 +60,47 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           icon: <SiNextdotjs size={36} className="text-black" />,
         },
         {
+          name: "React Router",
+          icon: (
+            <Image
+              src="/logos/react-router.svg"
+              alt="React Router"
+              width={36}
+              height={36}
+            />
+          ),
+        },
+        {
           name: "Tailwind CSS",
           icon: <SiTailwindcss size={36} className="text-teal-400" />,
+        },
+      ],
+    },
+    {
+      category: "State Management",
+      techs: [
+        {
+          name: "Redux",
+          icon: (
+            <Image src="/logos/redux.svg" alt="Redux" width={36} height={36} />
+          ),
+        },
+      ],
+    },
+
+    {
+      category: "Data Fetching",
+      techs: [
+        {
+          name: "React Query",
+          icon: (
+            <Image
+              src="/logos/react-query.svg"
+              alt="React Query"
+              width={36}
+              height={36}
+            />
+          ),
         },
       ],
     },
@@ -71,6 +114,17 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         {
           name: "Express",
           icon: <SiExpress size={36} className="text-gray-300" />,
+        },
+        {
+          name: "GraphQl",
+          icon: (
+            <Image
+              src="/logos/graphql.svg"
+              alt="GraphQl"
+              width={36}
+              height={36}
+            />
+          ),
         },
       ],
     },
@@ -95,6 +149,50 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       ],
     },
     {
+      category: "Testing",
+      techs: [
+        {
+          name: "Vitest",
+          icon: (
+            <Image
+              src="/logos/vitest.svg"
+              alt="Vitest"
+              width={36}
+              height={36}
+            />
+          ),
+        },
+        {
+          name: "Jest",
+          icon: (
+            <Image src="/logos/jest.svg" alt="Jest" width={36} height={36} />
+          ),
+        },
+        {
+          name: "Cypress",
+          icon: (
+            <Image
+              src="/logos/cypress.svg"
+              alt="Cypress"
+              width={36}
+              height={36}
+            />
+          ),
+        },
+        {
+          name: "Playwright",
+          icon: (
+            <Image
+              src="/logos/playwright.svg"
+              alt="Playwright"
+              width={36}
+              height={36}
+            />
+          ),
+        },
+      ],
+    },
+    {
       category: "Tools",
       techs: [
         {
@@ -103,9 +201,11 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
             <Image src="/logos/linux.svg" alt="Linux" width={36} height={36} />
           ),
         },
-
+        {
+          name: "Docker",
+          icon: <FaDocker size={36} className="text-[#1D63ED]" />,
+        },
         { name: "Git", icon: <FaGitAlt size={36} className="text-red-500" /> },
-
         {
           name: "GitHub",
           icon: <FaGithub size={36} className="text-black" />,
@@ -113,7 +213,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         {
           name: "Figma",
           icon: (
-            <Image src="/logos/figma.svg" alt="GitHub" width={36} height={36} />
+            <Image src="/logos/figma.svg" alt="Figma" width={36} height={36} />
           ),
         },
         {
@@ -139,7 +239,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         efficient solutions.
       </p>
 
-      <div className="grid gap-8 text-white">
+      <div className="grid sm:grid-cols-2 gap-8 text-white">
         {techCategories.map((cat) => (
           <div key={cat.category} className="bg-gray-800 rounded-2xl p-5">
             <h3 className="text-xl font-semibold mb-6 text-white">

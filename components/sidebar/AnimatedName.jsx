@@ -7,7 +7,7 @@ const AnimatedName = () => {
   };
 
   return (
-    <h1 className="text-center tracking-wide  font-playfair text-3xl sm:text-3xl md:text-4xl font-medium text-white">
+    <h1 className="text-center tracking-wide  text-3xl sm:text-3xl md:text-4xl font-medium text-white">
       <SplitText
         text="Wissem Jderi"
         delay={100}
