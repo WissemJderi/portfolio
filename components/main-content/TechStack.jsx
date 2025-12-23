@@ -163,12 +163,6 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           ),
         },
         {
-          name: "Jest",
-          icon: (
-            <Image src="/logos/jest.svg" alt="Jest" width={36} height={36} />
-          ),
-        },
-        {
           name: "Cypress",
           icon: (
             <Image
