@@ -64,7 +64,7 @@ export const myProjects = [
     repo: "https://github.com/WissemJderi/pps-links-official-website",
   },
   {
-    projectName: "Hichem Immo",
+    projectName: "Dahech Immo",
     projectDescription:
       "A modern real estate website with responsive design, dynamic listings, and an optimized image carousel.",
     techStack: (
@@ -75,7 +75,7 @@ export const myProjects = [
         <SiFramer color="white" size={25} />{" "}
       </div>
     ),
-    imageSrc: "hichemimmo_screenshot.webp",
+    imageSrc: "dahechimmo_screenshot.png",
     imageAlt: "Screenshot of the PPS Links company website",
     liveDemo: "http://dahechimmo.vercel.app/",
     repo: "https://github.com/WissemJderi/hichimmo",

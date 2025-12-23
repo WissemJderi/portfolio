@@ -201,10 +201,10 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
             <Image src="/logos/linux.svg" alt="Linux" width={36} height={36} />
           ),
         },
-        {
-          name: "Docker",
-          icon: <FaDocker size={36} className="text-[#1D63ED]" />,
-        },
+        // {
+        //   name: "Docker",
+        //   icon: <FaDocker size={36} className="text-[#1D63ED]" />,
+        // },
         { name: "Git", icon: <FaGitAlt size={36} className="text-red-500" /> },
         {
           name: "GitHub",
