@@ -1,9 +1,11 @@
-import { Montserrat } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
   display: "swap",
+  variable: "--font-ibm-plex-mono",
 });
 
 export const metadata = {
@@ -18,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${ibmPlexMono.className} antialiased`}>{children}</body>
     </html>
   );
 }

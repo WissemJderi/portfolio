@@ -12,7 +12,7 @@ const Certificates = ({ sectionStyle, titleStyle }) => {
         {certificates.map((cert) => (
           <div
             key={cert.title}
-            className="bg-gray-800 p-4 rounded-2xl hover:border-white transition flex flex-col justify-between"
+            className="bg-[#3a3a35] p-4 rounded-sm hover:border-white transition flex flex-col justify-between"
           >
             <div>
               <img
@@ -31,7 +31,7 @@ const Certificates = ({ sectionStyle, titleStyle }) => {
             <a
               href={cert.link}
               target="_blank"
-              className="text-blue-400 hover:text-blue-200 text-sm mt-4 inline-block transition-colors duration-300 ease-in-out"
+              className="text-white font-semibold hover:text-blue-200 text-sm mt-4 inline-block transition-colors duration-300 ease-in-out"
             >
               View Certificate →
             </a>

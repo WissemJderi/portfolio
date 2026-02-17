@@ -17,14 +17,14 @@ const ProjectCard = ({
     <motion.div
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 100 }}
-      className="flex flex-col justify-between p-4 bg-gray-900 rounded-2xl"
+      className="flex flex-col justify-between p-4 bg-[#2d2d33] rounded-sm"
     >
       <Image
         src={`/${imageSrc}`}
         width={500}
         height={300}
         alt={imageAlt}
-        className="h-50 mb-4 rounded-lg"
+        className="h-50 mb-4"
       />
       <h2 className="md:text-2xl text-sm font-medium flex gap-2">
         {projectName}

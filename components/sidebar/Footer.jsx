@@ -47,7 +47,7 @@ const Footer = () => {
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="flex items-center gap-x-2 text-white rounded-2xl hover:text-indigo-200 cursor-pointer"
+              className="flex items-center gap-x-2 text-white rounded-2xl hover:text-[#ddddc3] cursor-pointer"
             >
               {button.icon}
             </motion.button>

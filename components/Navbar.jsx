@@ -9,7 +9,7 @@ const Navbar = () => {
     "Certificates",
   ];
   const linkStyle =
-    "text-sm text-white sm:text-xl cursor-pointer hover:text-[#987CD3] font-semibold";
+    "text-sm text-white sm:text-xl cursor-pointer hover:text-[#ddddc3] font-semibold";
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);

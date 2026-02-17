@@ -224,7 +224,7 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
 
       <div className="grid sm:grid-cols-2 gap-8 text-white">
         {techCategories.map((cat) => (
-          <div key={cat.category} className="bg-gray-800 rounded-2xl p-5">
+          <div key={cat.category} className="bg-[#3a3a35] rounded-sm p-5">
             <h3 className="text-xl font-semibold mb-6 text-white">
               {`${cat.category}:`}
             </h3>

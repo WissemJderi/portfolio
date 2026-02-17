@@ -24,7 +24,7 @@ const BottomFooter = () => {
     },
   ];
   const buttonStyle =
-    "flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 rounded-2xl hover:bg-gray-800 cursor-pointer";
+    "flex items-center gap-x-2 bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 cursor-pointer";
 
   return (
     <div className="text-center text-white px-4 sm:px-0 sm:hidden block">

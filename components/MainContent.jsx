@@ -8,7 +8,7 @@ import BottomFooter from "./sidebar/BottomFooter";
 
 const MainContent = () => {
   const titleStyle = "text-3xl mb-5 font-bold font-stretch-75% tracking-wide";
-  const sectionStyle = "text-white mb-12  bg-black rounded-2xl py-10 px-10";
+  const sectionStyle = "text-white mb-12  bg-[#1c1c18] py-10 px-10";
   return (
     <div className="col-span-2 p-4 overflow-y-[scroll] overflow-x-hidden">
       <Projects sectionStyle={sectionStyle} titleStyle={titleStyle} />
