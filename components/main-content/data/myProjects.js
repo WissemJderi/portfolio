@@ -1,6 +1,13 @@
 import { FaPython, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiFramer, SiSwiper, SiTypescript } from "react-icons/si";
+import {
+  SiCloudinary,
+  SiExpress,
+  SiFramer,
+  SiMongodb,
+  SiSwiper,
+  SiTypescript,
+} from "react-icons/si";
 
 export const myProjects = [
   {
@@ -12,7 +19,10 @@ export const myProjects = [
         <SiTypescript color="white" size={25} />
         <FaReact color="white" size={25} />
         <RiTailwindCssFill color="white" size={25} />
-        <SiFramer color="white" size={25} />{" "}
+        <SiFramer color="white" size={25} />
+        <SiExpress color="white" size={25} />
+        <SiMongodb color="white" size={25} />
+        <SiCloudinary color="white" size={25} />
       </div>
     ),
     imageSrc: "dahechimmo_screenshot.png",
@@ -22,7 +32,9 @@ export const myProjects = [
   },
   {
     projectName: "InvoiceGen",
-    projectDescription: "A simple invoice generator that exports to PDF.",
+    projectDescription:
+      "Invoice generation app with dynamic item management, real-time calculations, and PDF export built with React and TypeScript.",
+
     techStack: (
       <div className="flex flex-row gap-3 my-2">
         <SiTypescript color="white" size={25} />
@@ -37,7 +49,8 @@ export const myProjects = [
   },
   {
     projectName: "Focus Note",
-    projectDescription: "A minimalist note-taking app for the terminal.",
+    projectDescription:
+      "A minimalist terminal-based note-taking application for efficient text management.",
     techStack: (
       <div className="flex flex-row gap-3 my-2">
         <FaPython color="white" size={25} />
