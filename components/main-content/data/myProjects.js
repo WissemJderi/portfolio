@@ -4,17 +4,21 @@ import { SiFramer, SiSwiper, SiTypescript } from "react-icons/si";
 
 export const myProjects = [
   {
-    projectName: "Focus Note",
-    projectDescription: "A minimalist note-taking app for the terminal.",
+    projectName: "Dahech Immo",
+    projectDescription:
+      "Full-stack real estate platform with JWT auth, admin dashboard, REST API, MongoDB, and Cloudinary image uploads.",
     techStack: (
       <div className="flex flex-row gap-3 my-2">
-        <FaPython color="white" size={25} />
+        <SiTypescript color="white" size={25} />
+        <FaReact color="white" size={25} />
+        <RiTailwindCssFill color="white" size={25} />
+        <SiFramer color="white" size={25} />{" "}
       </div>
     ),
-    imageSrc: "focus_note.webp",
-    imageAlt: "Screenshot of the app",
-    liveDemo: "https://youtu.be/8B_Ew92C02E",
-    repo: "https://github.com/WissemJderi/Focus-Note.git",
+    imageSrc: "dahechimmo_screenshot.png",
+    imageAlt: "Screenshot of the PPS Links company website",
+    liveDemo: "http://dahechimmo.vercel.app/",
+    repo: "https://github.com/WissemJderi/hichimmo",
   },
   {
     projectName: "InvoiceGen",
@@ -30,6 +34,19 @@ export const myProjects = [
     imageAlt: "Screenshot of the app",
     liveDemo: "https://wissem-jderi-invoice-gen.vercel.app/",
     repo: "https://github.com/WissemJderi/invoice-gen",
+  },
+  {
+    projectName: "Focus Note",
+    projectDescription: "A minimalist note-taking app for the terminal.",
+    techStack: (
+      <div className="flex flex-row gap-3 my-2">
+        <FaPython color="white" size={25} />
+      </div>
+    ),
+    imageSrc: "focus_note.webp",
+    imageAlt: "Screenshot of the app",
+    liveDemo: "https://youtu.be/8B_Ew92C02E",
+    repo: "https://github.com/WissemJderi/Focus-Note.git",
   },
   {
     projectName: "AL-NOUR Quran Institute",
@@ -62,22 +79,5 @@ export const myProjects = [
     imageAlt: "Screenshot of the PPS Links company website",
     liveDemo: "https://ppslinks.vercel.app/",
     repo: "https://github.com/WissemJderi/pps-links-official-website",
-  },
-  {
-    projectName: "Dahech Immo",
-    projectDescription:
-      "A modern real estate website with responsive design, dynamic listings, and an optimized image carousel.",
-    techStack: (
-      <div className="flex flex-row gap-3 my-2">
-        <SiTypescript color="white" size={25} />
-        <FaReact color="white" size={25} />
-        <RiTailwindCssFill color="white" size={25} />
-        <SiFramer color="white" size={25} />{" "}
-      </div>
-    ),
-    imageSrc: "dahechimmo_screenshot.png",
-    imageAlt: "Screenshot of the PPS Links company website",
-    liveDemo: "http://dahechimmo.vercel.app/",
-    repo: "https://github.com/WissemJderi/hichimmo",
   },
 ];
