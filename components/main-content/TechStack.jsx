@@ -1,11 +1,5 @@
 import Image from "next/image";
-import {
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-  FaDocker,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
 
 import {
   SiTailwindcss,
