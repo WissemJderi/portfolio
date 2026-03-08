@@ -11,33 +11,39 @@ const AboutMe = ({ sectionStyle, titleStyle }) => {
     >
       <h2 className={`${titleStyle}`}>About Me:</h2>
       <p className="text-gray-200 leading-relaxed mb-6">
-        I'm <span className="font-bold">Wissem</span>, a self-taught developer
-        who sees programming as more than just writing code;{" "}
-        <span className="font-bold">
-          it's a way to bring clarity to complexity and turn ideas into tangible
-          products
-        </span>
-        . I believe that software should serve a purpose, be elegant, and have
-        clear intention, quietly improving life without creating unnecessary
-        noise.
+        I'm <span className="font-bold">Wissem</span>, a{" "}
+        <span className="font-bold">20-year-old self-taught developer from Tunisia</span>.
       </p>
       <p className="text-gray-200 leading-relaxed mb-6">
-        I strive to create tools that are simple, precise, and enduring—products
-        that reflect thought rather than trend.
+        I got into programming because I liked the idea of turning an idea into
+        something real — something you can hand to thousands of people at almost no
+        cost. That's still what excites me about it. Not the tools, not the trends,
+        but the fact that a{" "}
         <span className="font-bold">
-          I prefer elegance over excess, intention over impulse, and meaningful
-          experiences over flashy appearances.
+          well-built piece of software can genuinely make someone's life a little easier
         </span>
-        Every line of code, every feature, is an opportunity to craft something
-        that lasts and makes a subtle but significant difference.
+        . That idea hasn't gotten old.
+      </p>
+      <p className="text-gray-200 leading-relaxed mb-6">
+        I work <span className="font-bold">systematically and deliberately</span>. I
+        care about understanding things properly before moving forward, and I'd rather
+        go slow and get it right than rush through and leave a mess behind. That
+        approach shows up in how I learn, how I write code, and how I think about
+        problems.
+      </p>
+      <p className="text-gray-200 leading-relaxed mb-6">
+        I'm not interested in building things that are flashy or complicated for their
+        own sake. I'm drawn to{" "}
+        <span className="font-bold">problems that have real, direct impact</span> —
+        tools that remove friction, simplify decisions, or give people back a bit of
+        their time. If software isn't making something genuinely better, what's the point?
       </p>
       <p className="text-gray-200 leading-relaxed">
-        I view development as both a <span className="font-bold">craft</span>{" "}
-        and a <span className="font-bold">discipline</span>: a space where
-        <span className="font-bold"> logic meets creativity</span>, and
-        curiosity meets careful execution. My work is guided by patience,
-        thoughtfulness, and a desire to create things that are{" "}
-        <span className="font-bold">useful, beautiful, and timeless.</span>{" "}
+        I'm currently <span className="font-bold">open to work</span> — frontend,
+        backend, or full-stack. I'm looking to contribute to projects that are worth
+        building, work with people who take their craft seriously, and keep getting
+        better at what I do. If that sounds like a fit,{" "}
+        <span className="font-bold">let's talk.</span>
       </p>
     </motion.section>
   );
