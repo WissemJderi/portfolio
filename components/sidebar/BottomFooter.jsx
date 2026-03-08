@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
 const BottomFooter = () => {
@@ -21,6 +22,11 @@ const BottomFooter = () => {
       id: 3,
       icon: <MdEmail size={20} />,
       link: "mailto:wissemjderi@outlook.com",
+    },
+    {
+      id: 4,
+      icon: <IoDocumentText size={20} />,
+      link: "/resume.pdf",
     },
   ];
   const buttonStyle =
