@@ -50,3 +50,4 @@ const AboutMe = ({ sectionStyle, titleStyle }) => {
 };
 
 export default AboutMe;
+
