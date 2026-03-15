@@ -12,6 +12,7 @@ import {
 export const myProjects = [
   {
     projectName: "Dahech Immo",
+    subTitle: "Built for a real client",
     projectDescription:
       "Full-stack real estate platform with JWT auth, admin dashboard, REST API, MongoDB, and Cloudinary image uploads.",
     techStack: (
@@ -29,6 +30,7 @@ export const myProjects = [
     imageAlt: "Screenshot of the PPS Links company website",
     liveDemo: "http://dahechimmo.vercel.app/",
     repo: "https://github.com/WissemJderi/hichimmo",
+    featured: true,
   },
   {
     projectName: "InvoiceGen",

@@ -4,6 +4,8 @@ const Projects = ({ sectionStyle, titleStyle }) => {
   const projectCards = myProjects.map((project) => (
     <ProjectCard
       projectName={project.projectName}
+      featured={project.featured}
+      subTitle={project.subTitle}
       projectDescription={project.projectDescription}
       imageSrc={project.imageSrc}
       imageAlt={project.imageAlt}

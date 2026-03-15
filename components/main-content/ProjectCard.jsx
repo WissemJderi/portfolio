@@ -6,12 +6,14 @@ import Link from "next/link";
 
 const ProjectCard = ({
   projectName,
+  subTitle,
   projectDescription,
   imageSrc,
   imageAlt,
   repo,
   liveDemo,
   techStack,
+  featured,
 }) => {
   return (
     <motion.div
@@ -19,16 +21,29 @@ const ProjectCard = ({
       transition={{ type: "spring", stiffness: 100 }}
       className="flex flex-col justify-between p-4 bg-[#2d2d33] rounded-sm"
     >
-      <Image
-        src={`/${imageSrc}`}
-        width={500}
-        height={300}
-        alt={imageAlt}
-        className="h-50 mb-4"
-      />
+      <div className="relative">
+        {featured && (
+          <span className="absolute top-2 right-2 z-10 text-xs px-2 py-1 bg-white text-black font-mono rounded-sm">
+            Featured
+          </span>
+        )}
+        <Image
+          src={`/${imageSrc}`}
+          width={500}
+          height={300}
+          alt={imageAlt}
+          className="h-50 mb-4"
+        />
+      </div>
+
       <h2 className="md:text-2xl text-sm font-medium flex gap-2">
         {projectName}
       </h2>
+
+      {subTitle ? (
+        <p className="text-xs sm:text-sm  italic text-gray-200">{subTitle}</p>
+      ) : null}
+
       <p className="sm:text-lg text-sm">{projectDescription}</p>
       {techStack}
       <div className="flex flex-row gap-2 justify-between mt-2">
