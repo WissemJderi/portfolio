@@ -48,6 +48,7 @@ export const myProjects = [
     imageAlt: "Screenshot of the app",
     liveDemo: "https://wissem-jderi-invoice-gen.vercel.app/",
     repo: "https://github.com/WissemJderi/invoice-gen",
+    featured: true,
   },
   {
     projectName: "Focus Note",

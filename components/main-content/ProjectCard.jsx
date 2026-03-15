@@ -23,7 +23,7 @@ const ProjectCard = ({
     >
       <div className="relative">
         {featured && (
-          <span className="absolute top-2 right-2 z-10 text-xs px-2 py-1 bg-white text-black font-mono rounded-sm">
+          <span className="absolute top-2 right-2 z-10 text-xs px-2 py-1 bg-[#2d2d33] text-white font-mono rounded-sm">
             Featured
           </span>
         )}
@@ -41,7 +41,9 @@ const ProjectCard = ({
       </h2>
 
       {subTitle ? (
-        <p className="text-xs sm:text-sm  italic text-gray-200">{subTitle}</p>
+        <span className="text-xs sm:text-sm  italic text-gray-200">
+          {subTitle}
+        </span>
       ) : null}
 
       <p className="sm:text-lg text-sm">{projectDescription}</p>
