@@ -7,6 +7,7 @@ import {
   SiMongodb,
   SiSwiper,
   SiTypescript,
+  SiVitest,
 } from "react-icons/si";
 
 export const myProjects = [
@@ -42,6 +43,7 @@ export const myProjects = [
         <SiTypescript color="white" size={25} />
         <FaReact color="white" size={25} />
         <RiTailwindCssFill color="white" size={25} />
+        <SiVitest color="white" size={25} />
       </div>
     ),
     imageSrc: "invoiceGen_screenshot.webp",
