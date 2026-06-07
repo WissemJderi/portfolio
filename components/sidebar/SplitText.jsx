@@ -24,9 +24,11 @@ const SplitText = ({
 }) => {
   const ref = useRef(null);
   const animationCompletedRef = useRef(false);
+  const [mounted, setMounted] = useState(false);
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     if (document.fonts.status === "loaded") {
       setFontsLoaded(true);
     } else {
@@ -150,37 +152,67 @@ const SplitText = ({
     switch (tag) {
       case "h1":
         return (
-          <h1 ref={ref} style={style} className={classes}>
+          <h1
+            ref={ref}
+            style={style}
+            className={classes}
+            suppressHydrationWarning
+          >
             {text}
           </h1>
         );
       case "h2":
         return (
-          <h2 ref={ref} style={style} className={classes}>
+          <h2
+            ref={ref}
+            style={style}
+            className={classes}
+            suppressHydrationWarning
+          >
             {text}
           </h2>
         );
       case "h3":
         return (
-          <h3 ref={ref} style={style} className={classes}>
+          <h3
+            ref={ref}
+            style={style}
+            className={classes}
+            suppressHydrationWarning
+          >
             {text}
           </h3>
         );
       case "h4":
         return (
-          <h4 ref={ref} style={style} className={classes}>
+          <h4
+            ref={ref}
+            style={style}
+            className={classes}
+            suppressHydrationWarning
+          >
             {text}
           </h4>
         );
       case "h5":
         return (
-          <h5 ref={ref} style={style} className={classes}>
+          <h5
+            ref={ref}
+            style={style}
+            className={classes}
+            suppressHydrationWarning
+          >
             {text}
           </h5>
         );
       case "h6":
         return (
-          <h6 ref={ref} style={style} className={classes}>
+          <h6
+            ref={ref}
+            style={style}
+            className={classes}
+            suppressHydrationWarning
+          >
             {text}
           </h6>
         );
@@ -192,6 +224,16 @@ const SplitText = ({
         );
     }
   };
+  if (!mounted) {
+    // Render a static placeholder that matches the server HTML exactly
+    const style = { textAlign, wordWrap: "break-word" };
+    const classes = `split-parent overflow-hidden inline-block whitespace-normal ${className}`;
+    return (
+      <p style={style} className={classes}>
+        {text}
+      </p>
+    );
+  }
   return renderTag();
 };
 

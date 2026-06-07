@@ -4,8 +4,14 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentText } from "react-icons/io5";
+import { useEffect, useState } from "react";
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   const buttonsList = [
     {
       id: 1,
@@ -63,7 +69,7 @@ const Footer = () => {
 
       <hr className="w-1/2 mx-auto my-3 border-gray-100 opacity-50" />
       <p className="text-gray-400 text-sm">
-        © {currentYear} Wissem Jderi. All rights reserved.
+        © {currentYear ?? 2026} Wissem Jderi. All rights reserved.
       </p>
     </div>
   );

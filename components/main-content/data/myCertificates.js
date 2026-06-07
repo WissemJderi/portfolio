@@ -13,6 +13,13 @@ export const certificates = [
     logo: "/logos/helsinkiuni.png",
   },
   {
+    title:
+      "Security Fundamentals & Offensive/Defensive Concepts – TryHackMe (Cyber Security 101 Path)",
+    issuer: "TryHackMe",
+    link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-J6JVGH2MA9.pdf",
+    logo: "/logos/tryhackme.svg",
+  },
+  {
     title: "CS50’s Introduction to Programming with Python",
     issuer: "Harvard",
     link: "https://cs50.harvard.edu/certificates/eac5cd37-29fd-4525-bb3d-2f2d5d4e4f9d",
