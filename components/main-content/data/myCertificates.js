@@ -14,6 +14,13 @@ export const certificates = [
   },
   {
     title:
+      "Junior Penetration Testing - TryHackMe (Jr Penetration Tester Learning Path)",
+    issuer: "TryHackMe",
+    link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ZX4PXSPHTN.pdf",
+    logo: "/logos/tryhackme.svg",
+  },
+  {
+    title:
       "Security Fundamentals & Offensive/Defensive Concepts – TryHackMe (Cyber Security 101 Path)",
     issuer: "TryHackMe",
     link: "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-J6JVGH2MA9.pdf",

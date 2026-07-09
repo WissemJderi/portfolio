@@ -2,12 +2,11 @@ import Image from "next/image";
 import { FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
 
 import {
-  SiTailwindcss,
   SiJavascript,
   SiExpress,
   SiMongodb,
-  SiNextdotjs,
   SiTypescript,
+  SiFastapi,
 } from "react-icons/si";
 
 const TechStack = ({ sectionStyle, titleStyle }) => {
@@ -35,6 +34,10 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           ),
         },
         {
+          name: "C",
+          icon: <Image src="/logos/c.svg" alt="C" width={36} height={36} />,
+        },
+        {
           name: "Java",
           icon: (
             <Image src="/logos/java.svg" alt="Java" width={36} height={36} />
@@ -43,64 +46,12 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       ],
     },
     {
-      category: "Frontend",
-      techs: [
-        {
-          name: "React",
-          icon: <FaReact size={36} className="text-blue-500" />,
-        },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs size={36} className="text-black" />,
-        },
-        {
-          name: "React Router",
-          icon: (
-            <Image
-              src="/logos/react-router.svg"
-              alt="React Router"
-              width={36}
-              height={36}
-            />
-          ),
-        },
-        {
-          name: "Tailwind CSS",
-          icon: <SiTailwindcss size={36} className="text-teal-400" />,
-        },
-      ],
-    },
-    {
-      category: "State Management",
-      techs: [
-        {
-          name: "Redux",
-          icon: (
-            <Image src="/logos/redux.svg" alt="Redux" width={36} height={36} />
-          ),
-        },
-      ],
-    },
-
-    {
-      category: "Data Fetching",
-      techs: [
-        {
-          name: "React Query",
-          icon: (
-            <Image
-              src="/logos/react-query.svg"
-              alt="React Query"
-              width={36}
-              height={36}
-            />
-          ),
-        },
-      ],
-    },
-    {
       category: "Backend",
       techs: [
+        {
+          name: "FastAPI",
+          icon: <SiFastapi size={36} className="text-[#14b8a6]" />,
+        },
         {
           name: "Node.js",
           icon: <FaNodeJs size={36} className="text-[#68A063]" />,
@@ -109,16 +60,15 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
           name: "Express",
           icon: <SiExpress size={36} className="text-gray-300" />,
         },
+      ],
+    },
+
+    {
+      category: "Frontend",
+      techs: [
         {
-          name: "GraphQl",
-          icon: (
-            <Image
-              src="/logos/graphql.svg"
-              alt="GraphQl"
-              width={36}
-              height={36}
-            />
-          ),
+          name: "React",
+          icon: <FaReact size={36} className="text-blue-500" />,
         },
       ],
     },
@@ -186,12 +136,6 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         {
           name: "GitHub",
           icon: <FaGithub size={36} className="text-black" />,
-        },
-        {
-          name: "Figma",
-          icon: (
-            <Image src="/logos/figma.svg" alt="Figma" width={36} height={36} />
-          ),
         },
         {
           name: "Postman",
