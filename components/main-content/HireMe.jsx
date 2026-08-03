@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Magnetic from "../Magnetic";
 import {
   FaReact,
   FaNodeJs,
@@ -98,12 +99,14 @@ const HireMe = ({ sectionStyle, titleStyle }) => {
           Have a project in mind, or just want to say hi? My inbox is always
           open.
         </p>
-        <a
-          href="mailto:wissemjderi@outlook.com?subject=Project%20inquiry"
-          className="inline-flex items-center gap-2 rounded-sm bg-[#111312] px-6 py-3 font-semibold text-[#ddddc3] transition-colors duration-300 hover:bg-black"
-        >
-          <FaEnvelope /> Get In Touch
-        </a>
+        <Magnetic>
+          <a
+            href="mailto:wissemjderi@outlook.com?subject=Project%20inquiry"
+            className="inline-flex items-center gap-2 rounded-sm bg-[#111312] px-6 py-3 font-semibold text-[#ddddc3] transition-colors duration-300 hover:bg-black"
+          >
+            <FaEnvelope /> Get In Touch
+          </a>
+        </Magnetic>
       </motion.div>
     </section>
   );

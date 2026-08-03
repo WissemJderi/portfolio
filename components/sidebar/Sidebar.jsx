@@ -1,6 +1,7 @@
 "use client";
 import AnimatedName from "./AnimatedName";
 import Footer from "./Footer";
+import LocalClock from "./LocalClock";
 
 const Sidebar = () => {
   return (
@@ -12,6 +13,7 @@ const Sidebar = () => {
         </p>
         <hr className="mx-auto my-3 border-gray-100 opacity-30" />
       </div>
+      <LocalClock />
       <Footer />
     </div>
   );
