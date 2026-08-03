@@ -9,11 +9,14 @@ import {
   FaLinkedin,
   FaSearch,
   FaUser,
+  FaPenNib,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentText } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const CommandPalette = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -51,6 +54,13 @@ const CommandPalette = () => {
         icon: <FaAward />,
         action: "scroll",
         keywords: "certificates achievements certs",
+      },
+      {
+        id: "Blog",
+        icon: <FaPenNib />,
+        action: "route",
+        href: "/blog",
+        keywords: "blog posts writing journal notes",
       },
       {
         id: "Email me",
@@ -96,6 +106,8 @@ const CommandPalette = () => {
     if (command.action === "scroll") {
       const el = document.getElementById(command.id);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else if (command.action === "route") {
+      router.push(command.href);
     } else if (command.href.startsWith("mailto:")) {
       window.location.href = command.href;
     } else {

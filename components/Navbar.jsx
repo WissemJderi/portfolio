@@ -1,19 +1,24 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   // The items that will be shown in the navbar
   const navbarItems = [
-    "My Projects",
-    "About Me",
-    "Tech I Use",
-    "Hire Me",
-    "Certificates",
+    { label: "My Projects", id: "My Projects" },
+    { label: "About Me", id: "About Me" },
+    { label: "Tech I Use", id: "Tech I Use" },
+    { label: "Hire Me", id: "Hire Me" },
+    { label: "Certificates", id: "Certificates" },
+    { label: "Blog", id: null },
   ];
   const [activeId, setActiveId] = useState(null);
 
   useEffect(() => {
-    const sectionIds = [...new Set(navbarItems)];
+    const sectionIds = navbarItems
+      .map((item) => item.id)
+      .filter(Boolean);
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter(Boolean);
@@ -48,23 +53,27 @@ const Navbar = () => {
     }
   };
   const navbarItemsContent = navbarItems.map((item) => {
-    const isActive = activeId === item;
+    const isActive = activeId === item.id;
     return (
       <button
         className={`${linkStyle} ${
           isActive ? "text-[#ddddc3]" : "text-white hover:text-[#ddddc3]"
         }`}
-        key={item}
+        key={item.label}
         onClick={() => {
-          scrollToSection(item);
+          if (item.id === null) {
+            router.push("/blog");
+          } else {
+            scrollToSection(item.id);
+          }
         }}
       >
-        {item}
+        {item.label}
       </button>
     );
   });
   return (
-    <div className="text-center flex flex-row justify-center sm:gap-7 gap-2 border-b border-white px-3 py-5 sm:bg-transparent bg-[#111312] fixed sm:relative top-0 z-50 ">
+    <div className="text-center flex flex-row justify-center sm:gap-7 gap-2 border-b border-white px-3 py-5 sm:bg-transparent bg-[#111312] fixed sm:relative top-0 z-50 w-full sm:w-auto">
       {navbarItemsContent}
     </div>
   );

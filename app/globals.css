@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @media (max-width: 640px) {
   section {
@@ -187,4 +188,98 @@ body {
 
 .animate-caret-blink {
   animation: caret-blink 1s step-end infinite;
+}
+
+.prose :not(pre) > code {
+  background: #3a3a35;
+  color: #ddddc3;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.prose :not(pre) > code::before,
+.prose :not(pre) > code::after {
+  content: none;
+}
+
+.prose pre {
+  background: #1c1c18;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.prose pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.875em;
+}
+
+.hljs {
+  color: #c9d1d9;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #8b949e;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-attr {
+  color: #ff7b72;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.function_,
+.hljs-section {
+  color: #d2a8ff;
+}
+
+.hljs-string,
+.hljs-addition,
+.hljs-regexp,
+.hljs-symbol,
+.hljs-meta .hljs-string {
+  color: #a5d6ff;
+}
+
+.hljs-number,
+.hljs-built_in,
+.hljs-type,
+.hljs-params,
+.hljs-char,
+.hljs-deletion {
+  color: #79c0ff;
+}
+
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-template-tag,
+.hljs-selector-attr {
+  color: #ffa657;
+}
+
+.hljs-attribute,
+.hljs-tag,
+.hljs-tag .hljs-name {
+  color: #79c0ff;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
 }

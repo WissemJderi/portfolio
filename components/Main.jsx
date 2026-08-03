@@ -6,7 +6,7 @@ import ScrollProgress from "./ScrollProgress";
 import CommandPalette from "./CommandPalette";
 import { motion } from "framer-motion";
 
-const Main = () => {
+const Main = ({ posts }) => {
   return (
     <>
       <motion.div
@@ -20,7 +20,7 @@ const Main = () => {
         <Navbar />
         <div className="sm:grid grid-flow-col grid-cols-3 xl:p-10 p-2 sm:h-10/12">
           <Sidebar />
-          <MainContent />
+          <MainContent posts={posts} />
         </div>
       </motion.div>
       <CommandPalette />
