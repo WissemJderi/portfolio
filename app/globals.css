@@ -178,3 +178,13 @@ html,
 body {
   overflow-x: hidden;
 }
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-caret-blink {
+  animation: caret-blink 1s step-end infinite;
+}

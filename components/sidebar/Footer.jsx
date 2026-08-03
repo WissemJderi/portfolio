@@ -73,6 +73,19 @@ const Footer = () => {
       <p className="text-gray-400 text-sm">
         © {currentYear ?? 2026} Wissem Jderi. All rights reserved.
       </p>
+
+      <button
+        type="button"
+        onClick={() =>
+          window.dispatchEvent(
+            new KeyboardEvent("keydown", { key: "k", ctrlKey: true }),
+          )
+        }
+        title="Open command palette"
+        className="mx-auto mt-3 flex items-center gap-2 rounded-sm border border-white/10 bg-[#3a3a35] px-2.5 py-1.5 text-xs text-gray-400 transition-colors hover:border-[#ddddc3]/50 hover:text-[#ddddc3]"
+      >
+        <span className="font-mono text-[10px]">Ctrl K</span>
+      </button>
     </div>
   );
 };
