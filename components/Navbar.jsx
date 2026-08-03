@@ -9,16 +9,11 @@ const Navbar = () => {
     "Tech I Use",
     "Hire Me",
     "Certificates",
-    "Contact",
   ];
-  // Maps nav item labels to the section id they should scroll to
-  const sectionIdMap = { Contact: "Hire Me" };
   const [activeId, setActiveId] = useState(null);
 
   useEffect(() => {
-    const sectionIds = [
-      ...new Set(navbarItems.map((item) => sectionIdMap[item] ?? item)),
-    ];
+    const sectionIds = [...new Set(navbarItems)];
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter(Boolean);
@@ -44,9 +39,7 @@ const Navbar = () => {
     "text-sm sm:text-xl cursor-pointer font-semibold transition-colors duration-300";
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(
-      sectionIdMap[sectionId] ?? sectionId,
-    );
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -55,8 +48,7 @@ const Navbar = () => {
     }
   };
   const navbarItemsContent = navbarItems.map((item) => {
-    const sectionId = sectionIdMap[item] ?? item;
-    const isActive = activeId === sectionId;
+    const isActive = activeId === item;
     return (
       <button
         className={`${linkStyle} ${
