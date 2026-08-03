@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { FaEnvelope } from "react-icons/fa";
+
 const HireMe = ({ sectionStyle, titleStyle }) => {
   const openForHire = [
     "Frontend Development – React, Next.js, Tailwind",
@@ -26,6 +29,26 @@ const HireMe = ({ sectionStyle, titleStyle }) => {
           </li>
         ))}
       </ul>
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="mt-8 rounded-sm bg-[#3a3a35] p-6 text-center"
+      >
+        <p className="text-xl font-semibold mb-2">Let's work together</p>
+        <p className="text-gray-200 mb-5">
+          Have a project in mind, or just want to say hi? My inbox is always
+          open.
+        </p>
+        <a
+          href="mailto:wissemjderi@outlook.com?subject=Project%20inquiry"
+          className="inline-flex items-center gap-2 rounded-sm bg-[#ddddc3] px-6 py-3 font-semibold text-[#111312] transition-colors duration-300 hover:bg-white"
+        >
+          <FaEnvelope /> Get In Touch
+        </a>
+      </motion.div>
     </section>
   );
 };
