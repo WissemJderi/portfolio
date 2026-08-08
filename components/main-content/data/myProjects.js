@@ -5,12 +5,36 @@ import {
   SiExpress,
   SiFramer,
   SiMongodb,
+  SiMongoose,
   SiSwiper,
   SiTypescript,
+  SiVite,
   SiVitest,
+  SiZod,
 } from "react-icons/si";
 
 export const myProjects = [
+  {
+    projectName: "Pwnfolio",
+    projectDescription:
+      "Full-stack CTF writeup platform with structured writeups, search, likes, and threaded comments, plus public profiles with a 12-month stats dashboard.",
+    techStack: (
+      <div className="flex flex-row gap-3 my-2">
+        <FaReact color="white" size={25} />
+        <SiVite color="white" size={25} />
+        <RiTailwindCssFill color="white" size={25} />
+        <SiExpress color="white" size={25} />
+        <SiMongoose color="white" size={25} />
+        <SiZod color="white" size={25} />
+        <SiVitest color="white" size={25} />
+      </div>
+    ),
+    imageSrc: "pwnfolio.png",
+    imageAlt: "Screenshot of the pwnfolio CTF writeup platform",
+    liveDemo: "https://pwnfolio.vercel.app/",
+    repo: "https://github.com/WissemJderi/pwnfolio",
+    featured: true,
+  },
   {
     projectName: "Dahech Immo",
     subTitle: "Built for a real client",
