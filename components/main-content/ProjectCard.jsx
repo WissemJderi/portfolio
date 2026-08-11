@@ -14,6 +14,7 @@ const ProjectCard = ({
   liveDemo,
   techStack,
   featured,
+  priority,
 }) => {
   return (
     <motion.div
@@ -32,6 +33,7 @@ const ProjectCard = ({
           width={500}
           height={300}
           alt={imageAlt}
+          priority={priority}
           className="h-50 mb-4"
         />
       </div>

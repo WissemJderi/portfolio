@@ -13,45 +13,46 @@ const AboutMe = ({ sectionStyle, titleStyle }) => {
       <p className="text-gray-200 leading-relaxed mb-6">
         I'm <span className="font-bold">Wissem</span>, a{" "}
         <span className="font-bold">
-          21-year-old self-taught developer from Tunisia
+          self-taught backend developer from Tunisia
         </span>
         .
       </p>
       <p className="text-gray-200 leading-relaxed mb-6">
         I got into programming because I liked the idea of turning an idea into
         something real — something you can hand to thousands of people at almost
-        no cost. That's still what excites me about it. Not the tools, not the
-        trends, but the fact that a{" "}
+        no cost. That's still what excites me about it: a{" "}
         <span className="font-bold">
           well-built piece of software can genuinely make someone's life a
           little easier
         </span>
-        . That idea hasn't gotten old.
+        .
       </p>
       <p className="text-gray-200 leading-relaxed mb-6">
         I work{" "}
-        <span className="font-bold">systematically and deliberately</span>. I
-        care about understanding things properly before moving forward, and I'd
+        <span className="font-bold">systematically and deliberately</span>. I'd
         rather go slow and get it right than rush through and leave a mess
-        behind. That approach shows up in how I learn, how I write code, and how
-        I think about problems.
+        behind — that shows up in how I learn, how I write code, and how I think
+        about problems.
       </p>
       <p className="text-gray-200 leading-relaxed mb-6">
-        I'm not interested in building things that are flashy or complicated for
-        their own sake. I'm drawn to{" "}
+        I taught myself through{" "}
+        <span className="font-bold">OSSU's computer science curriculum</span>,
+        working through it the way a program is meant to be worked through — in
+        order, without skipping the parts that are hard to skip.
+      </p>
+      <p className="text-gray-200 leading-relaxed mb-6">
+        I'm not drawn to flashy or complicated for its own sake. I care about{" "}
         <span className="font-bold">
-          problems that have real, direct impact
-        </span>{" "}
-        — tools that remove friction, simplify decisions, or give people back a
-        bit of their time. If software isn't making something genuinely better,
-        what's the point?
+          tools that remove friction, simplify decisions, and give people back a
+          bit of their time
+        </span>
+        . If software isn't making something genuinely better, what's the point?
       </p>
       <p className="text-gray-200 leading-relaxed">
         I'm currently <span className="font-bold">open to work</span> — backend,
-        with full-stack capability. I'm looking to contribute to projects that
-        are worth building, work with people who take their craft seriously, and
-        keep getting better at what I do. If that sounds like a fit,{" "}
-        <span className="font-bold">let's talk.</span>
+        with full-stack capability. Looking to join people who take their craft
+        seriously and keep getting better at what they do. If that sounds like a
+        fit, <span className="font-bold">let's talk.</span>
       </p>
     </motion.section>
   );

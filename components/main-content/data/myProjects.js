@@ -29,7 +29,7 @@ export const myProjects = [
         <SiVitest color="white" size={25} />
       </div>
     ),
-    imageSrc: "pwnfolio.png",
+    imageSrc: "pwnfolio_home.png",
     imageAlt: "Screenshot of the pwnfolio CTF writeup platform",
     liveDemo: "https://pwnfolio.vercel.app/",
     repo: "https://github.com/WissemJderi/pwnfolio",

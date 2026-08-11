@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import { myProjects } from "./data/myProjects";
 const Projects = ({ sectionStyle, titleStyle }) => {
-  const projectCards = myProjects.map((project) => (
+  const projectCards = myProjects.map((project, index) => (
     <ProjectCard
       projectName={project.projectName}
       featured={project.featured}
@@ -13,6 +13,7 @@ const Projects = ({ sectionStyle, titleStyle }) => {
       liveDemo={project.liveDemo}
       key={project.projectName}
       techStack={project.techStack}
+      priority={index === 0}
     />
   ));
   return (
