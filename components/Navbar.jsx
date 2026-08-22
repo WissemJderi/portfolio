@@ -7,6 +7,7 @@ const Navbar = () => {
   // The items that will be shown in the navbar
   const navbarItems = [
     { label: "My Projects", id: "My Projects" },
+    { label: "Security", id: "Security" },
     { label: "About Me", id: "About Me" },
     { label: "Tech I Use", id: "Tech I Use" },
     { label: "Open to Work", id: "Open to Work" },
@@ -73,7 +74,7 @@ const Navbar = () => {
     );
   });
   return (
-    <div className="text-center flex flex-row justify-center sm:gap-7 gap-2 border-b border-white px-3 py-5 sm:bg-transparent bg-[#111312] fixed sm:relative top-0 z-50 w-full sm:w-auto">
+    <div className="text-center flex flex-row flex-wrap justify-center sm:gap-7 gap-x-3 gap-y-1 border-b border-white px-3 py-5 sm:bg-transparent bg-[#111312] fixed sm:relative top-0 z-50 w-full sm:w-auto">
       {navbarItemsContent}
     </div>
   );

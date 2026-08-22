@@ -1,6 +1,7 @@
 "use client";
 import Projects from "./main-content/Projects";
 import AboutMe from "./main-content/AboutMe";
+import Security from "./main-content/Security";
 import TechStack from "./main-content/TechStack";
 import OpenToWork from "./main-content/OpenToWork";
 import Certificates from "./main-content/Certificates";
@@ -13,6 +14,7 @@ const MainContent = ({ posts }) => {
   return (
     <div id="main-scroll" className="col-span-2 p-4 overflow-y-[scroll] overflow-x-hidden">
       <Projects sectionStyle={sectionStyle} titleStyle={titleStyle} />
+      <Security sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <AboutMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <TechStack sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <OpenToWork sectionStyle={sectionStyle} titleStyle={titleStyle} />

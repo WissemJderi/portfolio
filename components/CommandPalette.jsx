@@ -10,6 +10,7 @@ import {
   FaSearch,
   FaUser,
   FaPenNib,
+  FaShieldAlt,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentText } from "react-icons/io5";
@@ -30,6 +31,12 @@ const CommandPalette = () => {
         icon: <FaFolderOpen />,
         action: "scroll",
         keywords: "projects work portfolio",
+      },
+      {
+        id: "Security",
+        icon: <FaShieldAlt />,
+        action: "scroll",
+        keywords: "security appsec ctf portswigger tryhackme hacking",
       },
       {
         id: "About Me",
