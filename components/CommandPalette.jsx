@@ -44,10 +44,10 @@ const CommandPalette = () => {
         keywords: "tech stack skills tools languages",
       },
       {
-        id: "Hire Me",
+        id: "Open to Work",
         icon: <FaBriefcase />,
         action: "scroll",
-        keywords: "hire contact freelance work",
+        keywords: "hire contact job role available work",
       },
       {
         id: "Certificates",

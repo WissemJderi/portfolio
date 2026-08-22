@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: "My Projects", id: "My Projects" },
     { label: "About Me", id: "About Me" },
     { label: "Tech I Use", id: "Tech I Use" },
-    { label: "Hire Me", id: "Hire Me" },
+    { label: "Open to Work", id: "Open to Work" },
     { label: "Certificates", id: "Certificates" },
     { label: "Blog", id: null },
   ];

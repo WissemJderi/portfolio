@@ -2,7 +2,7 @@
 import Projects from "./main-content/Projects";
 import AboutMe from "./main-content/AboutMe";
 import TechStack from "./main-content/TechStack";
-import HireMe from "./main-content/HireMe";
+import OpenToWork from "./main-content/OpenToWork";
 import Certificates from "./main-content/Certificates";
 import BlogPreview from "./main-content/BlogPreview";
 import BottomFooter from "./sidebar/BottomFooter";
@@ -15,7 +15,7 @@ const MainContent = ({ posts }) => {
       <Projects sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <AboutMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <TechStack sectionStyle={sectionStyle} titleStyle={titleStyle} />
-      <HireMe sectionStyle={sectionStyle} titleStyle={titleStyle} />
+      <OpenToWork sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <Certificates sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <BlogPreview posts={posts} sectionStyle={sectionStyle} titleStyle={titleStyle} />
       <BottomFooter />

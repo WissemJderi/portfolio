@@ -2,6 +2,8 @@ import { FaPython, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   SiCloudinary,
+  SiNestjs,
+  SiPostgresql,
   SiExpress,
   SiFramer,
   SiMongodb,
@@ -15,9 +17,26 @@ import {
 
 export const myProjects = [
   {
+    projectName: "Ashab Assamourah Academy",
+    subTitle: "Ongoing — a production codebase I didn't write",
+    projectDescription:
+      "An online Quran-teaching platform with live classes, a shared whiteboard and lesson recording. I maintain the backend — bug fixes and new features in a 90,000-line NestJS and PostgreSQL codebase I didn't write.",
+    techStack: (
+      <div className="flex flex-row gap-3 my-2">
+        <SiNestjs color="white" size={25} />
+        <SiTypescript color="white" size={25} />
+        <SiPostgresql color="white" size={25} />
+      </div>
+    ),
+    imageSrc: "ashab_assamourah_screenshot.png",
+    imageAlt: "Screenshot of the Ashab Assamourah Academy platform",
+    liveDemo: "https://ashabassamourah-academy.cloud/",
+    featured: true,
+  },
+  {
     projectName: "Pwnfolio",
     projectDescription:
-      "Full-stack CTF writeup platform with structured writeups, search, likes, and threaded comments, plus public profiles with a 12-month stats dashboard.",
+      "A platform for publishing CTF writeups, live in production. Express 5 and strict TypeScript, JWT access/refresh over httpOnly cookies, zod schemas shared between client and server, ~100 tests.",
     techStack: (
       <div className="flex flex-row gap-3 my-2">
         <FaReact color="white" size={25} />
@@ -39,7 +58,7 @@ export const myProjects = [
     projectName: "Dahech Immo",
     subTitle: "Built for a real client",
     projectDescription:
-      "Full-stack real estate platform with JWT auth, admin dashboard, REST API, MongoDB, and Cloudinary image uploads.",
+      "A real estate listings platform built for a client and in use today. TypeScript end to end, JWT auth, an admin dashboard, and a REST API on Express and MongoDB.",
     techStack: (
       <div className="flex flex-row gap-3 my-2">
         <SiTypescript color="white" size={25} />
@@ -52,8 +71,8 @@ export const myProjects = [
       </div>
     ),
     imageSrc: "dahechimmo_screenshot.png",
-    imageAlt: "Screenshot of the PPS Links company website",
-    liveDemo: "http://dahechimmo.vercel.app/",
+    imageAlt: "Screenshot of the Dahech Immo real estate platform",
+    liveDemo: "https://dahechimmo.vercel.app/",
     repo: "https://github.com/WissemJderi/hichimmo",
     featured: true,
   },
@@ -71,10 +90,9 @@ export const myProjects = [
       </div>
     ),
     imageSrc: "invoiceGen_screenshot.webp",
-    imageAlt: "Screenshot of the app",
+    imageAlt: "Screenshot of the InvoiceGen invoicing app",
     liveDemo: "https://wissem-jderi-invoice-gen.vercel.app/",
     repo: "https://github.com/WissemJderi/invoice-gen",
-    featured: true,
   },
   {
     projectName: "Focus Note",
@@ -86,7 +104,7 @@ export const myProjects = [
       </div>
     ),
     imageSrc: "focus_note.webp",
-    imageAlt: "Screenshot of the app",
+    imageAlt: "Screenshot of the Focus Note terminal app",
     liveDemo: "https://youtu.be/8B_Ew92C02E",
     repo: "https://github.com/WissemJderi/Focus-Note.git",
   },
