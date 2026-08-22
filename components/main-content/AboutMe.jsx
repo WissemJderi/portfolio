@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+
+const linkStyle =
+  "text-[#ddddc3] underline underline-offset-4 decoration-white/25 transition-colors hover:decoration-[#ddddc3]";
+
 const AboutMe = ({ sectionStyle, titleStyle }) => {
   return (
     <motion.section
@@ -10,50 +14,80 @@ const AboutMe = ({ sectionStyle, titleStyle }) => {
       className={`${sectionStyle}`}
     >
       <h2 className={`${titleStyle}`}>About Me:</h2>
-      <p className="text-gray-200 leading-relaxed mb-6">
-        I'm <span className="font-bold">Wissem</span>, a{" "}
-        <span className="font-bold">
-          self-taught backend developer from Tunisia
-        </span>
-        .
-      </p>
-      <p className="text-gray-200 leading-relaxed mb-6">
-        I got into programming because I liked the idea of turning an idea into
-        something real — something you can hand to thousands of people at almost
-        no cost. That's still what excites me about it: a{" "}
-        <span className="font-bold">
-          well-built piece of software can genuinely make someone's life a
-          little easier
-        </span>
-        .
-      </p>
-      <p className="text-gray-200 leading-relaxed mb-6">
-        I work{" "}
-        <span className="font-bold">systematically and deliberately</span>. I'd
-        rather go slow and get it right than rush through and leave a mess
-        behind — that shows up in how I learn, how I write code, and how I think
-        about problems.
-      </p>
-      <p className="text-gray-200 leading-relaxed mb-6">
-        I taught myself through{" "}
-        <span className="font-bold">OSSU's computer science curriculum</span>,
-        working through it the way a program is meant to be worked through — in
-        order, without skipping the parts that are hard to skip.
-      </p>
-      <p className="text-gray-200 leading-relaxed mb-6">
-        I'm not drawn to flashy or complicated for its own sake. I care about{" "}
-        <span className="font-bold">
-          tools that remove friction, simplify decisions, and give people back a
-          bit of their time
-        </span>
-        . If software isn't making something genuinely better, what's the point?
-      </p>
-      <p className="text-gray-200 leading-relaxed">
-        I'm currently <span className="font-bold">open to work</span> — backend,
-        with full-stack capability. Looking to join people who take their craft
-        seriously and keep getting better at what they do. If that sounds like a
-        fit, <span className="font-bold">let's talk.</span>
-      </p>
+
+      <div className="max-w-2xl space-y-5 leading-relaxed text-gray-200">
+        <p>
+          I'm <span className="font-bold">Wissem</span>, a{" "}
+          <span className="font-bold">self-taught backend developer</span> from
+          Sousse, Tunisia.
+        </p>
+
+        <p>
+          I got into programming because I liked that you can build a thing once
+          and hand it to thousands of people. That part still holds up.
+        </p>
+
+        <p>
+          What keeps me here is different, though. I care about{" "}
+          <span className="font-bold">
+            understanding what is actually happening underneath
+          </span>
+          , rather than gluing pieces
+          together until the errors stop. I learned the hard way that "it works"
+          and "I know why it works" are two different things, and that the
+          difference only shows up later, when something breaks and someone has
+          to understand why.
+        </p>
+
+        <p>
+          So I work <span className="font-bold">slowly and deliberately</span>.
+          I would rather get something right
+          than get it done twice. Errors are the part I actually learn from, and
+          simplicity is the part that survives.
+        </p>
+
+        <p>
+          <span className="font-bold">Security is the other half of it.</span>{" "}
+          Spending time on how applications
+          get broken into changed how I build them: it is harder to be careless
+          about auth or input handling once you have spent an evening walking
+          through someone else's.
+        </p>
+
+        <p>
+          Most of what I know came from building things, plus{" "}
+          <a
+            href="https://fullstackopen.com/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkStyle}
+          >
+            Full Stack Open
+          </a>
+          ,{" "}
+          <a
+            href="https://cs50.harvard.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkStyle}
+          >
+            CS50
+          </a>{" "}
+          and the{" "}
+          <a
+            href="https://github.com/ossu/computer-science"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkStyle}
+          >
+            OSSU curriculum
+          </a>{" "}
+          along the way. There's no degree behind any of it —{" "}
+          <span className="font-bold">what there is instead is public</span>:
+          the repos, the deployed sites, the writeups. I work in Arabic and English, and right now most
+          of my days go into Node.js, NestJS and PostgreSQL.
+        </p>
+      </div>
     </motion.section>
   );
 };

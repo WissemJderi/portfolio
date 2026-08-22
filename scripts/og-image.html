@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+  Source for public/og-image.png — the 1200x630 card that renders when the site
+  is shared on LinkedIn, Slack, X, etc. Edit the text below, then regenerate:
+
+    google-chrome --headless=new --window-size=1200,630 \
+      --screenshot=public/og-image.png scripts/og-image.html
+
+  Needs network access on first run: IBM Plex Mono is pulled from Google Fonts
+  so the card matches the site's typeface. After regenerating, re-share the URL
+  through LinkedIn's Post Inspector to bust their cache.
+-->
+<html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width:1200px; height:630px; background:#111312;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size:60px 60px;
+    display:flex; flex-direction:column; justify-content:center; padding:0 120px;
+  }
+  .kicker { color:#8b8b85; font-size:30px; letter-spacing:.22em; margin-bottom:44px; }
+  h1 { font-size:92px; font-weight:700; line-height:1.12; letter-spacing:-.01em; }
+  h1 .a { color:#ffffff; }
+  h1 .b { color:#ddddc3; }
+  hr { border:0; border-top:2px solid #ddddc3; width:440px; margin:46px 0 26px; opacity:.85; }
+  .stack { color:#8b8b85; font-size:29px; letter-spacing:.05em; }
+</style></head>
+<body>
+  <div class="kicker">// WISSEM JDERI</div>
+  <h1><span class="a">Backend</span><br><span class="b">Developer</span></h1>
+  <hr>
+  <div class="stack">Node.js · TypeScript · PostgreSQL</div>
+</body></html>

@@ -1,19 +1,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-  FaDocker,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGitAlt, FaDocker } from "react-icons/fa";
 
 import {
   SiJavascript,
   SiExpress,
+  SiNestjs,
   SiMongodb,
   SiTypescript,
-  SiFastapi,
   SiNextdotjs,
   SiTailwindcss,
 } from "react-icons/si";
@@ -42,16 +36,6 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
             />
           ),
         },
-        {
-          name: "C",
-          icon: <Image src="/logos/c.svg" alt="C" width={36} height={36} />,
-        },
-        {
-          name: "Java",
-          icon: (
-            <Image src="/logos/java.svg" alt="Java" width={36} height={36} />
-          ),
-        },
       ],
     },
     {
@@ -75,16 +59,16 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
       category: "Backend",
       techs: [
         {
-          name: "FastAPI",
-          icon: <SiFastapi size={36} className="text-[#14b8a6]" />,
-        },
-        {
           name: "Node.js",
           icon: <FaNodeJs size={36} className="text-[#68A063]" />,
         },
         {
           name: "Express",
           icon: <SiExpress size={36} className="text-gray-300" />,
+        },
+        {
+          name: "NestJS",
+          icon: <SiNestjs size={36} className="text-[#E0234E]" />,
         },
       ],
     },
@@ -150,10 +134,6 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
         },
         { name: "Git", icon: <FaGitAlt size={36} className="text-red-500" /> },
         {
-          name: "GitHub",
-          icon: <FaGithub size={36} className="text-gray-300" />,
-        },
-        {
           name: "Postman",
           icon: (
             <Image
@@ -172,8 +152,8 @@ const TechStack = ({ sectionStyle, titleStyle }) => {
     <section id="Tech I Use" className={sectionStyle}>
       <h2 className={`${titleStyle}`}>Technologies I Use:</h2>
       <p className="mb-7">
-        The tools, languages, and frameworks I specialize in to deliver
-        efficient solutions.
+        What I work with day to day. I've left off anything I couldn't answer
+        questions about.
       </p>
 
       <div className="grid gap-3 text-white sm:grid-cols-2">

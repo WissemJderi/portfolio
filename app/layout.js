@@ -12,18 +12,21 @@ const SITE_URL = "https://wissemjderi.vercel.app/";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Wissem Jderi - Full-Stack Web Developer",
+  title: "Wissem Jderi — Backend Developer",
   description:
-    "Wissem Jderi - Full-stack developer building modern, efficient web applications. Skilled in JavaScript, React, Node.js, and passionate about clean, maintainable code.",
+    "Self-taught backend developer in Tunisia. Node.js, TypeScript, NestJS and PostgreSQL, with a web security practice behind it. Open to remote roles.",
   keywords: [
     "Wissem Jderi",
-    "Full-Stack Developer",
-    "Web Developer",
-    "React",
-    "Next.js",
+    "Backend Developer",
     "Node.js",
     "TypeScript",
-    "Freelance Developer",
+    "NestJS",
+    "Express",
+    "PostgreSQL",
+    "REST API",
+    "Web Application Security",
+    "Remote Developer",
+    "Tunisia",
   ],
   authors: [{ name: "Wissem Jderi" }],
   creator: "Wissem Jderi",
@@ -39,23 +42,23 @@ export const metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Wissem Jderi",
-    title: "Wissem Jderi - Full-Stack Web Developer",
+    title: "Wissem Jderi — Backend Developer",
     description:
-      "Full-stack developer building modern, efficient web applications. Skilled in JavaScript, React, Node.js, and passionate about clean, maintainable code.",
+      "Self-taught backend developer in Tunisia. Node.js, TypeScript, NestJS and PostgreSQL, with a web security practice behind it. Open to remote roles.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Wissem Jderi - Full-Stack Web Developer",
+        alt: "Wissem Jderi — Backend Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wissem Jderi - Full-Stack Web Developer",
+    title: "Wissem Jderi — Backend Developer",
     description:
-      "Full-stack developer building modern, efficient web applications. Skilled in JavaScript, React, Node.js, and passionate about clean, maintainable code.",
+      "Self-taught backend developer in Tunisia. Node.js, TypeScript, NestJS and PostgreSQL, with a web security practice behind it. Open to remote roles.",
     images: ["/og-image.png"],
   },
   icons: {

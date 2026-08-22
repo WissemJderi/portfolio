@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div className="text-center sm:mt-1 mt-20">
         <AnimatedName />
         <p className="text-sm opacity-85 text-[#ddddc3]">
-          Full-Stack Web Developer
+          Backend Developer
         </p>
         <hr className="mx-auto my-3 border-gray-100 opacity-30" />
       </div>

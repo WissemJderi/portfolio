@@ -5,7 +5,7 @@ const proof = [
   {
     name: "TryHackMe",
     detail:
-      "166 rooms completed, an 86-day daily streak, top 2% of users.",
+      "166 rooms completed, including the Jr Penetration Tester path. Top 2% of users.",
     href: "https://tryhackme.com/p/WissemJderi",
   },
   {

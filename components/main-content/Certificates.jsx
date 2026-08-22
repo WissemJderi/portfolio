@@ -47,8 +47,7 @@ const Certificates = ({ sectionStyle, titleStyle }) => {
       <h2 className={titleStyle}>Certificates & Achievements:</h2>
 
       <p className="mb-7">
-        Some of the certificates I’ve earned while learning and growing as a
-        developer.
+        The courses and paths I worked through in full.
       </p>
 
       <h3 className="mb-3 text-lg font-semibold text-white">Programming</h3>
